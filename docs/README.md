@@ -1,3 +1,8 @@
+---
+nav_order: 1
+permalink: /
+layout: default
+---
 # Home
 
 This site details the resources available at NSE's Cyber Security Lab and other information relating to penetration testing.
