@@ -23,5 +23,13 @@ sudo gem install jekyll bundler
 bundle exec jekyll serve
 ```
 
+### Docker
+In this directory do the following commands:
+
+```
+sudo docker build -t work_web .
+docker run -p 4000:4000 -ti --rm --name work_web_container work_web
+```
+
 
 
