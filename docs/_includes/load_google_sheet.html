@@ -1,6 +1,29 @@
-<div id="tables">
+<div class="modal micromodal-slide" id="email-modal" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="email-modal-title">
+      <header class="modal__header">
+        <h2>Enter your email</h2>
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+      </header>
+      <main class="modal__content" id="email-modal-content">
+         <input type="email" id="email" placeholder="email@kth.com">
+         <input type="hidden" id="row" value="0">
+         <input type="hidden" id="item" value="">
+      </main>
+      <footer class="modal__footer">
+        <button class="btn" onclick="book()">Continue</button>
+        <button class="btn" data-micromodal-close aria-label="Close this dialog window">Cancel</button></footer>
+    </div>
+  </div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script async defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script async src="{{ base.url | prepend: site.url }}/assets/js/micromodal.min.js"></script>
+<script async src="{{ base.url | prepend: site.url }}/assets/js/new_test.js"></script>
+<script async defer src="https://apis.google.com/js/api.js"
+onload="this.onload=function(){};handleClientLoad()"></script>
+<link rel="stylesheet" type="text/css" href="{{ base.url | prepend: site.url }}/assets/css/micromodal.css">
+<div id="tables">
+</div>
 <script>var worksheetNumber = {{ include.worksheet_number }} ;</script>
-<script src="{{ base.url | prepend: site.url }}/assets/js/test.js"></script>
+<!-- <script src="{{ base.url | prepend: site.url }}/assets/js/test.js"></script> -->

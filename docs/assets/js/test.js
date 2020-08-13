@@ -1,5 +1,6 @@
 var spreadsheetID = "1-ZTCEB_XrMIM65hqTaB8nF_TRgeGFnLu9Ngcj0Y8E8A";
 var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/"+worksheetNumber+"/public/values?alt=json";
+//var url = "https://sheets.googleapis.com/v4/spreadsheets/" + spreadsheetID + "/values/Sheet1";
 var booking = "https://docs.google.com/spreadsheets/d/1-ZTCEB_XrMIM65hqTaB8nF_TRgeGFnLu9Ngcj0Y8E8A/edit#gid=0&range="
 console.log(url);
 $.getJSON(url, function(data) {
